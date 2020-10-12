@@ -200,7 +200,7 @@ public class AssignmentService {
     addProject(assignmentName, releaseTime, deadline, readMe, projectTypeEnum, hasTemplate,
         testZipChecksum, testZipUrl);
     String[] items = order.split(", ");
-    for (int i = 0; i < items.length; i++ ) {
+    for (int i = 0; i < items.length; i++) {
       if (items[i] == "Compile Failure") {
         items[i] = "cpf";
       } else if (items[i] == "Unit Test Failure") {
