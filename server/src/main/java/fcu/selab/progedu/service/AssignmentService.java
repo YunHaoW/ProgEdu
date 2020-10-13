@@ -201,11 +201,11 @@ public class AssignmentService {
         testZipChecksum, testZipUrl);
     String[] items = order.split(", ");
     for (int i = 0; i < items.length; i++) {
-      if (items[i] == "Compile Failure") {
+      if (items[i].equals("Compile Failure")) {
         items[i] = "cpf";
-      } else if (items[i] == "Unit Test Failure") {
+      } else if (items[i].equals("Unit Test Failure")) {
         items[i] = "utf";
-      } else if (items[i] == "Coding Style Failure") {
+      } else if (items[i].equals("Coding Style Failure")) {
         items[i] = "csf";
       }
     }
